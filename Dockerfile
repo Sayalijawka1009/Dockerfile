@@ -1,7 +1,7 @@
-FROM nginx:latest
+FROM httpd:latest
 
-COPY . /usr/share/nginx/html
+COPY . /usr/share/httpd/html
 
 EXPOSE 80
 
-CMD ["nginx", "-g", "daemon off;"]
+CMD ["httpd", "-g", "daemon off;"]
